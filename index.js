@@ -7,6 +7,7 @@ import accountRouter from "./lib/account.js";
 const app = express();
 
 app.use(bodyParser.json());
+
 app.use("/account", accountRouter);
 
 app.listen(3000, () => {
